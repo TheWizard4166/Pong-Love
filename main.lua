@@ -5,35 +5,24 @@ end
 function circleRectCollision(circ, rect)
     return rect.x <= circ.x + circ.r and rect.x <= circ.x + circ.r  and circ.x - circ.r <= rect.x + rect.width and rect.y <= circ.y + circ.r and circ.y - circ.r <= rect.y + rect.height
 end
+
 function outOfBoundsCirc(a)
     return a.x - a.r >= wWidth and a.x + a.r <= wWidth and a.y + a.r <= wHeight and a.y - a.r >= wHeight
 end
 
 function love.load()
+    Object = require("classic")
+    require("shape")
+    require("rectangle")
+    require("circle")
+    -- 
     wHeight = 920 
     wWidth = 1200
     love.window.setMode(wWidth, wHeight)
     speed = wHeight / 2   
-    playerRect = {
-         x = 0,
-         y = wHeight/2,
-         width = 50,
-         height = 200
-    }
-    aiRect = {
-         x = wWidth - 50,
-         y = wHeight/2,
-         width = 50,
-         height = 200
-    }
-    ball = {
-        x = wWidth/2,
-        y = wHeight/2,
-        r = 25,
-        width = 100,
-        height = 100,
-        vx = -5
-    }
+    playerRect = Rectangle("fill", 0, wHeight/2, 50, 200)
+    aiRect = Rectangle("fill", wWidth - 50, wHeight/2, 50, 200)
+    ball = circle("fill", wWidth/2, wHeight/2, 25)
 end
 
 function love.update(dt)
