@@ -1,9 +1,8 @@
 Shape = Object:extend()
 
 function Shape:new(x, y)
-    self.x = x
-    self.y = y
-    self.speed = 100
+    self.x = x or wWidth/2
+    self.y = y or wHeight/2
 end
 
 function Shape:update(dt) 
