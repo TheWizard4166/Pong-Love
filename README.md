@@ -1,8 +1,6 @@
-# README
+# Convert to exe
 
-## Convert to exe
-
-### Windows
+## Windows
 
 Open Powershell and type in the following command to convert to .exe
 
@@ -10,7 +8,7 @@ Open Powershell and type in the following command to convert to .exe
     copy /b love.exe+pong.love pong.exe
 ```
 
-### Linux/macOS
+## Linux/macOS
 
 Open the Terminal and type in the following command to convert to .exe
 
@@ -18,17 +16,17 @@ Open the Terminal and type in the following command to convert to .exe
     cat love.exe pong.love > pong.exe
 ```
 
-## Run game
+# Run game
 
-### With exe
+## With exe
 
 If using a windows system, just double click the exe file. I've not tested it on windows so your results may vary, but it should work.
 
-### With .love
+## With .love
 
 Ensure that love is installed, go to https://www.love2d.org/ and follow the installation instructions.
 
-#### Linux
+### Linux
 
 Open the terminal and run
 
@@ -38,6 +36,6 @@ Open the terminal and run
 
 and a window should open up
 
-#### MacOS/Windows
+### MacOS/Windows
 
 I have not tested it on these platforms, refer to this webpage (https://www.love2d.org/wiki/Getting_Started), and follow the instructions for Mac and Windows.
