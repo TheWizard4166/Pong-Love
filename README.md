@@ -22,7 +22,7 @@ Open the Terminal and type in the following command to convert to .exe
 
 ### With exe
 
-If using a windows system, just run the game. I've not tested it on windows so your results may vary
+If using a windows system, just double click the exe file. I've not tested it on windows so your results may vary, but it should work.
 
 ### With .love
 
